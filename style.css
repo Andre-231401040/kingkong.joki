@@ -223,7 +223,6 @@ section .pagination a {
   text-align: center;
   text-decoration: none;
   border: none;
-  border-radius: 50%;
 }
 
 section .pagination .btn {
@@ -236,44 +235,6 @@ section .pagination .btn {
 section .pagination .active {
   color: white;
   background-color: #4b70f5;
-}
-
-/* Bagian Payment Method */
-
-.payment {
-  flex-grow: 1;
-  color: black;
-  padding: 1.4rem;
-}
-
-.payment_method {
-  display: flex;
-  padding: 1rem 0;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.payment_method .content {
-  width: 20%;
-  min-height: 20vh;
-  padding: 1rem;
-  border-radius: 1rem;
-  margin: 0 1.4rem 1rem 0;
-  background-color: #fafafa;
-  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
-}
-
-.payment_method .content img {
-  width: 50%;
-}
-
-.payment_method .content p {
-  margin-top: 0.2rem;
-  font-weight: bolder;
-}
-
-.payment_procedure p {
-  margin-bottom: 0.7rem;
 }
 
 /* Bagian Prices */
@@ -314,6 +275,44 @@ section .pagination .active {
 .price .content p {
   margin: 0.4rem 0;
   color: #333;
+}
+
+/* Bagian Payment Method */
+
+.payment {
+  flex-grow: 1;
+  color: black;
+  padding: 1.4rem;
+}
+
+.payment_method {
+  display: flex;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.payment_method .content {
+  width: 20%;
+  min-height: 20vh;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 0 1.4rem 1rem 0;
+  background-color: #fafafa;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+.payment_method .content img {
+  width: 50%;
+}
+
+.payment_method .content p {
+  margin-top: 0.2rem;
+  font-weight: bolder;
+}
+
+.payment_procedure p {
+  margin-bottom: 0.7rem;
 }
 
 /* Bagian Footer */
@@ -360,6 +359,7 @@ footer {
 }
 
 /* Formulir */
+
 form {
   gap: 1.2rem;
   width: 42%;
@@ -438,6 +438,9 @@ form button:hover {
   .testimoni-container {
     width: 100%;
   }
+  section .pagination a {
+    min-width: 3rem;
+  }
   .price h3 {
     font-size: 2.4rem;
   }
@@ -502,7 +505,7 @@ form button:hover {
   }
   section .pagination a {
     padding: 1rem;
-    min-width: 3rem;
+    min-width: 4rem;
   }
   .price h3 {
     font-size: 2rem;
