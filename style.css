@@ -541,4 +541,14 @@ form button:hover {
     padding: 0.4rem;
     height: 20rem;
   }
+  .social-media img {
+    width: 8rem;
+    height: 8rem;
+  }
+  .footer-links {
+    margin: 3rem 0;
+  }
+  .footer-links a {
+    font-size: 2.5rem;
+  }
 }
