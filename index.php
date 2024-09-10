@@ -107,6 +107,7 @@
         <button onclick="window.location.href='./formulir_testimoni.php'">Kirim Testimoni</button>
       </div>
       <div class="testimoni-container">
+        <?php if($pages != 0){ ?>
         <?php 
           while($row = $result->fetch_assoc()){
         ?>
@@ -117,6 +118,11 @@
         <?php 
           } 
         ?>
+        <?php }else{ ?>
+          <div class="testimonial" style="background: none; box-shadow: none">
+            <p>Belum ada testimoni.</p>
+          </div>
+        <?php } ?>
       </div>
       <div class="page-info">
         Halaman ke-<?php echo $start / $rows_per_page + 1; ?> dari <?php echo $pages ?>
